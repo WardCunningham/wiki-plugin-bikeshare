@@ -6,7 +6,7 @@ expect = require 'expect.js'
 
 describe 'bikeshare plugin', ->
 
-  describe 'parse', ->
+  describe 'parse text', ->
 
     it 'can pass text', ->
       config = bikeshare.parse 'hello world'
@@ -19,3 +19,9 @@ describe 'bikeshare plugin', ->
     it 'can break lines', ->
       config = bikeshare.parse 'hello\nworld'
       expect(config.lines).to.eql ['hello', 'world']
+
+  describe 'parse gbfs links', ->
+
+    it 'can find station link', ->
+      config = bikeshare.parse 'STATION https://gbfs.citibikenyc.com/gbfs/en/station_information.json'
+      expect(config.station).to.be 'https://gbfs.citibikenyc.com/gbfs/en/station_information.json'

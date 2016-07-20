@@ -8,7 +8,11 @@ escape = (text)->
 parse = (text) ->
   config = {lines: []}
   for line in text.split /\n/
-    config.lines.push escape line
+    if m = line.match /^STATION *(.*)/
+      config.station = m[1]
+      config.lines.push "<span class=station><i>waiting for stations</i></span>"
+    else
+      config.lines.push escape line
   config
 
 emit = ($item, item) ->
@@ -18,6 +22,20 @@ emit = ($item, item) ->
       #{config.lines.join '<br>'}
     </p>
   """
+
+  if config.station
+    $.getJSON config.station, (result) ->
+      config.stations = result.data.stations
+      $item.find('.station').empty().append "#{config.stations.length} stations"
+      console.log 'stations', config.stations
+
+  $item.addClass 'marker-source'
+  $item.get(0).markerData = ->
+    if config.stations
+      ({lat:s.lat, lon:s.lon, label:s.name} for s in config.stations)
+    else
+      []
+
 
 bind = ($item, item) ->
   $item.dblclick -> wiki.textEditor $item, item
