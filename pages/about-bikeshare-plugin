@@ -1,0 +1,37 @@
+{
+  "title": "About Bikeshare Plugin",
+  "story": [
+  {
+    "type": "paragraph",
+    "id": "2370aa13a8db7e07",
+    "text": "Here we describe the purpose of the plugin and include a sample."
+  },
+  {
+    "type": "bikeshare",
+    "id": "3fadab7cd2d82c80",
+    "text": "This is text in the new plugin. You can *double-click* to edit it too."
+  }
+],
+  "journal": [
+  {
+    "type": "create",
+    "item": {
+      "title": "About Bikeshare Plugin",
+      "story": [
+  {
+    "type": "paragraph",
+    "id": "2370aa13a8db7e07",
+    "text": "Here we describe the purpose of the plugin and include a sample."
+  },
+  {
+    "type": "bikeshare",
+    "id": "3fadab7cd2d82c80",
+    "text": "This is text in the new plugin. You can *double-click* to edit it too."
+  }
+]
+    },
+    "date": 1469009124000,
+    "certificate": "from mkplugin.sh"
+  }
+]
+}
