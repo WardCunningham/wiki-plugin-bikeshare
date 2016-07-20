@@ -4,7 +4,7 @@
     {
       "type": "paragraph",
       "id": "2370aa13a8db7e07",
-      "text": "This plugin will fetch status information from city bikeshare programs to be rendered as map markers."
+      "text": "This plugin will fetch status information from city bikeshare programs to be rendered as map markers. [https://github.com/WardCunningham/wiki-plugin-bikeshare github]"
     },
     {
       "type": "bikeshare",
@@ -219,6 +219,16 @@
         "text": "Citibike New York City\nSTATION https://gbfs.citibikenyc.com/gbfs/en/station_information.json"
       },
       "date": 1469019516217
+    },
+    {
+      "type": "edit",
+      "id": "2370aa13a8db7e07",
+      "item": {
+        "type": "paragraph",
+        "id": "2370aa13a8db7e07",
+        "text": "This plugin will fetch status information from city bikeshare programs to be rendered as map markers. [https://github.com/WardCunningham/wiki-plugin-bikeshare github]"
+      },
+      "date": 1469021637963
     }
   ]
 }
