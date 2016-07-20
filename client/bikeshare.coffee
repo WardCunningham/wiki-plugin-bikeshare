@@ -18,7 +18,7 @@ parse = (text) ->
 emit = ($item, item) ->
   config = parse item.text
   $item.append """
-    <p style="background-color:#eee;padding:15px;">
+    <p style="background-color:#eee;padding:15px; text-align:center">
       #{config.lines.join '<br>'}
     </p>
   """
