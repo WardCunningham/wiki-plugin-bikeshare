@@ -6,8 +6,16 @@ expect = require 'expect.js'
 
 describe 'bikeshare plugin', ->
 
-  describe 'expand', ->
+  describe 'parse', ->
 
-    it 'can make itallic', ->
-      result = bikeshare.expand 'hello *world*'
-      expect(result).to.be 'hello <i>world</i>'
+    it 'can pass text', ->
+      config = bikeshare.parse 'hello world'
+      expect(config.lines).to.eql ['hello world']
+
+    it 'can escape text', ->
+      config = bikeshare.parse 'hello <thing>'
+      expect(config.lines).to.eql ['hello &lt;thing&gt;']
+
+    it 'can break lines', ->
+      config = bikeshare.parse 'hello\nworld'
+      expect(config.lines).to.eql ['hello', 'world']
