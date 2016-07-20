@@ -9,7 +9,7 @@
     {
       "type": "bikeshare",
       "id": "3fadab7cd2d82c80",
-      "text": "This is text in the new plugin. You can *double-click* to edit it too."
+      "text": "Citibike New York City\nSTATION https://gbfs.citibikenyc.com/gbfs/en/station_information.json"
     },
     {
       "type": "paragraph",
@@ -209,6 +209,16 @@
         "text": "Motivate, for example, shares its operational data from a dozen cities in GBFS format. [http://www.motivateco.com/use-our-data/ site]"
       },
       "date": 1469018625168
+    },
+    {
+      "type": "edit",
+      "id": "3fadab7cd2d82c80",
+      "item": {
+        "type": "bikeshare",
+        "id": "3fadab7cd2d82c80",
+        "text": "Citibike New York City\nSTATION https://gbfs.citibikenyc.com/gbfs/en/station_information.json"
+      },
+      "date": 1469019516217
     }
   ]
 }
