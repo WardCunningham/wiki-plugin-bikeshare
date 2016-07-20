@@ -1,17 +1,19 @@
 {
   "name": "wiki-plugin-bikeshare",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Federated Wiki - Bikeshare Plugin",
   "keywords": [
     "bikeshare",
+    "gbfs",
+    "general bikeshare feed specification",
     "wiki",
     "federated wiki",
     "plugin"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "you@example.com",
-    "url": "http://example.com"
+    "name": "Ward Cunningham",
+    "email": "ward@c2.com",
+    "url": "http://ward.fed.wiki.org"
   },
   "contributors": [],
   "scripts": {
@@ -28,10 +30,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fedwiki/wiki-plugin-bikeshare.git"
+    "url": "https://github.com/wardcunningham/wiki-plugin-bikeshare.git"
   },
   "bugs": {
-    "url": "https://github.com/fedwiki/wiki-plugin-bikeshare/issues"
+    "url": "https://github.com/wardcunningham/wiki-plugin-bikeshare/issues"
   },
   "engines": {
     "node": ">0.10"

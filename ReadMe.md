@@ -1,6 +1,9 @@
 # Federated Wiki - Bikeshare Plugin
 
-This plugin, type: bikeshare, extends the markup of the federated wiki.
+This plugin, type: bikeshare, fetches open bikeshare data files
+and makes bike and station information available as a map marker source.
+
+https://github.com/NABSA/gbfs
 
 ## Build
 
