@@ -11,9 +11,35 @@ parse = (text) ->
     if m = line.match /^STATION *(.*)/
       config.station = m[1]
       config.lines.push "<span class=station><i>waiting for stations</i></span>"
+    else if m = line.match /^NEARBY/
+      config.nearby = true
     else
       config.lines.push escape line
   config
+
+lineup = ($item) ->
+  return [{lat: 51.5, lon: 0.0, label: 'North Greenwich'}] unless wiki?
+  markers = []
+  candidates = $(".item:lt(#{$('.item').index($item)})")
+  if (who = candidates.filter ".marker-source").size()
+    markers = markers.concat div.markerData() for div in who
+  markers
+
+nearby = (stops, stations) ->
+  keeps = {}
+  for stop in stops
+    quads = [[],[],[],[]]
+    for s in stations
+      quad = (if s.lat > stop.lat then 2 else 0) + (if s.lon > stop.lon then 1 else 0)
+      console.log quad
+      dist = Math.abs(s.lat - stop.lat) + Math.abs(s.lon - stop.lon)
+      quads[quad].push [dist, s]
+    for q in quads
+      rank = q.sort (a,b) -> a[0] - b[0]
+      for r in rank[0..0]
+        keeps[r[1].name] = r[1]
+  (v for k, v of keeps)
+
 
 emit = ($item, item) ->
   config = parse item.text
@@ -25,9 +51,13 @@ emit = ($item, item) ->
 
   if config.station
     $.getJSON config.station, (result) ->
-      config.stations = result.data.stations
+      config.stations = if config.nearby
+        markers = lineup $item
+        debugger
+        nearby markers, result.data.stations
+      else 
+        result.data.stations
       $item.find('.station').empty().append "#{config.stations.length} stations"
-      console.log 'stations', config.stations
 
   $item.addClass 'marker-source'
   $item.get(0).markerData = ->
