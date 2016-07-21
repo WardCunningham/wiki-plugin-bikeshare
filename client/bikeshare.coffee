@@ -49,14 +49,18 @@ emit = ($item, item) ->
   """
 
   if config.station
+    qualification = ''
     $.getJSON config.station, (result) ->
       config.stations = if config.nearby
         markers = lineup $item
-        debugger
-        nearby markers, result.data.stations
+        if markers.length
+          qualification = 'nearby'
+          nearby markers, result.data.stations
+        else
+          result.data.stations
       else 
         result.data.stations
-      $item.find('.station').empty().append "#{config.stations.length} stations"
+      $item.find('.station').empty().append "#{config.stations.length} stations #{qualification}"
 
   $item.addClass 'marker-source'
   $item.get(0).markerData = ->
