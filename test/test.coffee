@@ -25,3 +25,9 @@ describe 'bikeshare plugin', ->
     it 'can find station link', ->
       config = bikeshare.parse 'STATION https://gbfs.citibikenyc.com/gbfs/en/station_information.json'
       expect(config.station).to.be 'https://gbfs.citibikenyc.com/gbfs/en/station_information.json'
+
+  describe 'parsed options', ->
+
+    it 'can include nearby', ->
+      config = bikeshare.parse 'NEARBY'
+      expect(config.nearby).to.be true

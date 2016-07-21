@@ -31,7 +31,6 @@ nearby = (stops, stations) ->
     quads = [[],[],[],[]]
     for s in stations
       quad = (if s.lat > stop.lat then 2 else 0) + (if s.lon > stop.lon then 1 else 0)
-      console.log quad
       dist = Math.abs(s.lat - stop.lat) + Math.abs(s.lon - stop.lon)
       quads[quad].push [dist, s]
     for q in quads

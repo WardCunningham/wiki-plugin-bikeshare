@@ -27,9 +27,19 @@
       "text": "Motivate, for example, shares its operational data from a dozen cities in GBFS format. [http://www.motivateco.com/use-our-data/ site]"
     },
     {
+      "type": "paragraph",
+      "id": "0bcf960bca5d0113",
+      "text": "The plugin is configured with keywords, one per line, starting in column one."
+    },
+    {
       "type": "markdown",
       "id": "1160187c38c2bd00",
       "text": "Say __STATION__ _url_ to fetch GBFS station information."
+    },
+    {
+      "type": "markdown",
+      "id": "d8ef141a8d17eaa6",
+      "text": "Say __NEARBY__ to select stations nearest lineup markers in each of four directions."
     },
     {
       "type": "paragraph",
@@ -229,6 +239,52 @@
         "text": "This plugin will fetch status information from city bikeshare programs to be rendered as map markers. [https://github.com/WardCunningham/wiki-plugin-bikeshare github]"
       },
       "date": 1469021637963
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d8ef141a8d17eaa6"
+      },
+      "id": "d8ef141a8d17eaa6",
+      "type": "add",
+      "after": "ae4ae8b6206588d6",
+      "date": 1469115849763
+    },
+    {
+      "type": "edit",
+      "id": "d8ef141a8d17eaa6",
+      "item": {
+        "type": "markdown",
+        "id": "d8ef141a8d17eaa6",
+        "text": "Say __NEARBY__ to select stations nearest lineup markers in each of four directions."
+      },
+      "date": 1469115944226
+    },
+    {
+      "type": "move",
+      "order": [
+        "2370aa13a8db7e07",
+        "3fadab7cd2d82c80",
+        "b4be87ffef5510c8",
+        "73bed1c0a82b1ff9",
+        "1f87aba6d760e9ec",
+        "1160187c38c2bd00",
+        "d8ef141a8d17eaa6",
+        "ae4ae8b6206588d6"
+      ],
+      "id": "d8ef141a8d17eaa6",
+      "date": 1469115947853
+    },
+    {
+      "type": "add",
+      "id": "0bcf960bca5d0113",
+      "item": {
+        "type": "paragraph",
+        "id": "0bcf960bca5d0113",
+        "text": "The plugin is configured with keywords, one per line, starting in column one."
+      },
+      "after": "1f87aba6d760e9ec",
+      "date": 1469116091760
     }
   ]
 }
