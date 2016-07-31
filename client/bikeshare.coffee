@@ -30,6 +30,7 @@ nearby = (stops, stations) ->
   for stop in stops
     quads = [[],[],[],[]]
     for s in stations
+      s.weblink ||= stop.weblink
       quad = (if s.lat > stop.lat then 2 else 0) + (if s.lon > stop.lon then 1 else 0)
       dist = Math.abs(s.lat - stop.lat) + Math.abs(s.lon - stop.lon)
       quads[quad].push [dist, s]
@@ -65,7 +66,7 @@ emit = ($item, item) ->
   $item.addClass 'marker-source'
   $item.get(0).markerData = ->
     if config.stations
-      ({lat:s.lat, lon:s.lon, label:s.name} for s in config.stations)
+      ({lat:s.lat, lon:s.lon, label:s.name, weblink: s.weblink} for s in config.stations)
     else
       []
 
