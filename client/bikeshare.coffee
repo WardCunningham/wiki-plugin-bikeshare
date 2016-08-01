@@ -31,7 +31,9 @@ nearby = (stops, stations) ->
     quads = [[],[],[],[]]
     for s in stations
       s.weblink ||= stop.weblink
-      quad = (if s.lat > stop.lat then 2 else 0) + (if s.lon > stop.lon then 1 else 0)
+      dx = s.lon - stop.lon
+      dy = s.lat - stop.lat
+      quad = (if dx+dy > 0 then 2 else 0) + (if dx-dy > 0 then 1 else 0)
       dist = Math.abs(s.lat - stop.lat) + Math.abs(s.lon - stop.lon)
       quads[quad].push [dist, s]
     for q in quads
