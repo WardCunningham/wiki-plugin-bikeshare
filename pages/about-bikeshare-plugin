@@ -4,12 +4,22 @@
     {
       "type": "paragraph",
       "id": "2370aa13a8db7e07",
-      "text": "This plugin will fetch status information from city bikeshare programs to be rendered as map markers. [https://github.com/WardCunningham/wiki-plugin-bikeshare github]"
+      "text": "This plugin will fetch status information from city bikeshare programs to be sourced as map markers, possibly selecting stations near markers in the lineup. [https://github.com/WardCunningham/wiki-plugin-bikeshare github]"
+    },
+    {
+      "type": "map",
+      "id": "d77cb8954f2e72c2",
+      "text": "Cunsultant's Daily Commute\n40.7504594, -73.9737314 Hotel\n40.7075230, -74.0099144 Work"
+    },
+    {
+      "type": "paragraph",
+      "id": "a9e1ab61822796e1",
+      "text": "Plugin finds bikeshare stations serving a daily commute."
     },
     {
       "type": "bikeshare",
       "id": "3fadab7cd2d82c80",
-      "text": "Citibike New York City\nSTATION https://gbfs.citibikenyc.com/gbfs/en/station_information.json"
+      "text": "Citibike New York City\nSTATION https://gbfs.citibikenyc.com/gbfs/en/station_information.json\nNEARBY"
     },
     {
       "type": "paragraph",
@@ -285,6 +295,158 @@
       },
       "after": "1f87aba6d760e9ec",
       "date": 1469116091760
+    },
+    {
+      "type": "fork",
+      "date": 1762024554616
+    },
+    {
+      "item": {
+        "type": "map",
+        "id": "d77cb8954f2e72c2",
+        "text": "Cunsultant's Daily Commute\n40.7504594, -73.9737314 Hotel\n40.7075230, -74.0099144 Work"
+      },
+      "id": "d77cb8954f2e72c2",
+      "type": "add",
+      "after": "ae4ae8b6206588d6",
+      "date": 1762024563797
+    },
+    {
+      "type": "edit",
+      "id": "d77cb8954f2e72c2",
+      "item": {
+        "type": "map",
+        "id": "d77cb8954f2e72c2",
+        "text": "Cunsultant's Daily Commute\n40.7504594, -73.9737314 Hotel\n40.7075230, -74.0099144 Work"
+      },
+      "date": 1762024594622
+    },
+    {
+      "type": "edit",
+      "id": "d77cb8954f2e72c2",
+      "item": {
+        "type": "map",
+        "id": "d77cb8954f2e72c2",
+        "text": "Cunsultant's Daily Commute\n40.7504594, -73.9737314 Hotel\n40.7075230, -74.0099144 Work"
+      },
+      "date": 1762025005889
+    },
+    {
+      "type": "edit",
+      "id": "d77cb8954f2e72c2",
+      "item": {
+        "type": "map",
+        "id": "d77cb8954f2e72c2",
+        "text": "Cunsultant's Daily Commute\n40.7504594, -73.9737314 Hotel\n40.7075230, -74.0099144 Work"
+      },
+      "date": 1762025440798
+    },
+    {
+      "type": "edit",
+      "id": "d77cb8954f2e72c2",
+      "item": {
+        "type": "map",
+        "id": "d77cb8954f2e72c2",
+        "text": "Cunsultant's Daily Commute\n40.7504594, -73.9737314 Hotel\n40.7075230, -74.0099144 Work"
+      },
+      "date": 1762025459887
+    },
+    {
+      "id": "d77cb8954f2e72c2",
+      "type": "move",
+      "order": [
+        "2370aa13a8db7e07",
+        "d77cb8954f2e72c2",
+        "3fadab7cd2d82c80",
+        "b4be87ffef5510c8",
+        "73bed1c0a82b1ff9",
+        "1f87aba6d760e9ec",
+        "0bcf960bca5d0113",
+        "1160187c38c2bd00",
+        "d8ef141a8d17eaa6",
+        "ae4ae8b6206588d6"
+      ],
+      "date": 1762025469523
+    },
+    {
+      "type": "edit",
+      "id": "3fadab7cd2d82c80",
+      "item": {
+        "type": "bikeshare",
+        "id": "3fadab7cd2d82c80",
+        "text": "Citibike New York City\nSTATION https://gbfs.citibikenyc.com/gbfs/en/station_information.json\nNEARBY"
+      },
+      "date": 1762025497816
+    },
+    {
+      "type": "edit",
+      "id": "d77cb8954f2e72c2",
+      "item": {
+        "type": "map",
+        "id": "d77cb8954f2e72c2",
+        "text": "Cunsultant's Daily Commute\n40.7504594, -73.9737314 Hotel\n40.7075230, -74.0099144 Work"
+      },
+      "date": 1762025569842
+    },
+    {
+      "type": "edit",
+      "id": "d77cb8954f2e72c2",
+      "item": {
+        "type": "map",
+        "id": "d77cb8954f2e72c2",
+        "text": "Cunsultant's Daily Commute\n40.7504594, -73.9737314 Hotel\n40.7075230, -74.0099144 Work"
+      },
+      "date": 1762025602024
+    },
+    {
+      "type": "edit",
+      "id": "2370aa13a8db7e07",
+      "item": {
+        "type": "paragraph",
+        "id": "2370aa13a8db7e07",
+        "text": "This plugin will fetch status information from city bikeshare programs to be sourced as map markers, possibly selecting stations near markers in the lineup. [https://github.com/WardCunningham/wiki-plugin-bikeshare github]"
+      },
+      "date": 1762046929420
+    },
+    {
+      "type": "add",
+      "id": "a9e1ab61822796e1",
+      "item": {
+        "type": "paragraph",
+        "id": "a9e1ab61822796e1",
+        "text": "Plugin finds bikeshare stations serving a daily commute."
+      },
+      "after": "2370aa13a8db7e07",
+      "date": 1762047121547
+    },
+    {
+      "type": "edit",
+      "id": "a9e1ab61822796e1",
+      "item": {
+        "type": "paragraph",
+        "id": "a9e1ab61822796e1",
+        "text": "Plugin finds bikeshare stations serving a daily commute."
+      },
+      "date": 1762047141579
+    },
+    {
+      "id": "a9e1ab61822796e1",
+      "type": "move",
+      "order": [
+        "2370aa13a8db7e07",
+        "d77cb8954f2e72c2",
+        "a9e1ab61822796e1",
+        "3fadab7cd2d82c80",
+        "b4be87ffef5510c8",
+        "73bed1c0a82b1ff9",
+        "1f87aba6d760e9ec",
+        "0bcf960bca5d0113",
+        "1160187c38c2bd00",
+        "d8ef141a8d17eaa6",
+        "ae4ae8b6206588d6"
+      ],
+      "date": 1762047144910
     }
-  ]
+  ],
+  "plugin": "bikeshare"
 }

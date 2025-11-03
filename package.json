@@ -17,7 +17,8 @@
   },
   "contributors": [],
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "grunt coffee"
   },
   "devDependencies": {
     "grunt": "~0.4",
